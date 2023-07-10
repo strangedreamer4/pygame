@@ -11,9 +11,9 @@ if [ "$yes" == "yes" ]; then
     clear
     apt update -y
     clear
-    sudo apt install python
+    sudo apt install python -y
     clear
-    apt install python
+    apt install python -y
     clear
     python3 -m pip install freegames
     clear
