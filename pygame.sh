@@ -74,6 +74,15 @@ if [ "$yes" == "yes" ]; then
             ;;
     esac
 else
+    sleep 1
+    echo "             /\_/\""
+    sleep 1
+    echo "            ( o.o )"
+    sleep 1
+    echo "             > ^ <  (Meoo)"
+    sleep 1
+    echo "                 Welcome User "
+    sleep 2
     # Define the possible choices
     choices=(
         "snake"
