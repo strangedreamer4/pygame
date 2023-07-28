@@ -11,6 +11,8 @@ if [ "$yes" == "yes" ]; then
     clear
     apt update -y
     clear
+    apt install espeak -y
+    clear
     sudo apt install python -y
     clear
     apt install python -y
@@ -26,6 +28,7 @@ if [ "$yes" == "yes" ]; then
     sleep 1
     echo "             > ^ <  (Meoo)"
     sleep 1
+    espeak "welcome  user"
     echo "                 Welcome User "
     sleep 2
     # Define the possible choices
@@ -54,21 +57,25 @@ if [ "$yes" == "yes" ]; then
     case $choice in
         "snake")
             echo "You chose snake."
+            espeak "loding snake"
             sleep 2
              python -m freegames.snake 
             ;;
         "paint")
             echo "You chose paint"
+            espeak "loading paint"
             sleep 2
             python -m freegames.paint
             ;;
         "pacman")
             echo "You chose pacman."
+            espeak "loading pacman"
             sleep 2
-             python -m freegames.pacman
+            python -m freegames.pacman
             ;;
         "cannon")
             echo "You chose cannon."
+            espeak "loading cannon"
             sleep 2
             python -m freegames.cannon
             ;;
